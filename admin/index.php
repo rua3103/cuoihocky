@@ -51,7 +51,7 @@ $db = $database->connect();
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             
-            <?php include 'header.php' ?>
+            <?php include "header.php" ?>
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
