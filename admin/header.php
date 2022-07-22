@@ -23,7 +23,7 @@
                                 <img src="images/icon/avatar-06.jpg" alt="John Doe" />
                             </div>
                             <div class="content">
-                                <a class="js-acc-btn" href="#"><?php echo $new_user->v_fullname; ?></a>
+                                <a class="js-acc-btn" href="content"><?php echo $new_user->v_fullname; ?></a>
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="info clearfix">
