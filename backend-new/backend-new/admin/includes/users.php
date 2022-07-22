@@ -69,8 +69,8 @@ class user{
 		$this->v_email=$row['v_email'];
 		$this->v_image=$row['v_image'];
 		$this->v_message=$row['v_message'];		
-		$this->d_date_created=$row['d_date_created'];		
-		$this->d_time_created=$row['d_time_created'];		
+		$this->d_date_updated=$row['d_date_updated'];		
+		$this->d_time_updated=$row['d_time_updated'];		
 	}
 
 	//Create blog_post

@@ -127,7 +127,7 @@
             <ul class="list-unstyled navbar__list">
                 <li class="active has-sub">
                     <a class="js-arrow" href="index.php">
-                        <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        <i class="fas fa-tachometer-alt"></i>Home</a>
                 </li>
                 <li>
                     <a href="blog_category.php">

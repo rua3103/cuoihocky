@@ -175,7 +175,7 @@
                                                 <td><?php echo $rows['v_category_meta_title']; ?></td>
                                                 <td><?php echo $rows['v_category_path']; ?></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary btn-sm" onclick="location.href='../categories.php?id=<?php echo $rows['n_category_id']; ?>'">View</button>
+                                                    <button type="button" class="btn btn-primary btn-sm" onclick="">View</button>
                                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edit-category<?php echo $rows['n_category_id']; ?>">Edit</button>
                                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#delete-category<?php echo $rows['n_category_id']; ?>">Delete</button>
                                                 </td>

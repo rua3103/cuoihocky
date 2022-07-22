@@ -61,7 +61,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
     if(isset($_POST['create_blog'])){
 
-        $target_file = "../images/upload/";
+        $target_file = "../images/icon/";
         if(!empty($_FILES['main_image']['name'])){
             $main_image = $_FILES['main_image']['name'];
             move_uploaded_file($_FILES['main_image']['tmp_name'], $target_file.$main_image);
@@ -192,7 +192,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                                                 <td><?php echo $rows['n_blog_post_views']; ?></td>
                                                 <td><?php echo $rows['f_post_status']; ?></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary btn-sm" onclick="location.href='../read_blog.php?id=<?php echo $rows['n_blog_post_id']; ?>'">View</button>
+                                                    <button type="button" class="btn btn-primary btn-sm" onclick="">View</button>
                                                     <button type="button" class="btn btn-primary btn-sm" onclick="location.href='edit_blog.php?id=<?php echo $rows['n_blog_post_id']; ?>'">Edit</button>
                                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#delete-blog<?php echo $rows['n_blog_post_id']; ?>">Delete</button>
                                                 </td>

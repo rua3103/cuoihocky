@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['update_user_profile'])) {
 
         if (!empty($_FILES['image_profile']['name'])) {
-            $target_file = 'images/avatars/';
+            $target_file = 'images/icon/';
             $image_name = $_FILES['image_profile']['name'];
             move_uploaded_file($_FILES['image_profile']['tmp_name'], $target_file . $image_name);
         } else {
@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                     if ($my_user->v_image != '') {
                                                 ?>
                                                 <br/>
-                                                <img src="images/upload/<?php echo $my_user->v_image; ?>" width="400px">
+                                                <img src="images/icon/<?php echo $my_user->v_image; ?>" width="400px">
                                                 <?php
                                                     }
                                                 ?>

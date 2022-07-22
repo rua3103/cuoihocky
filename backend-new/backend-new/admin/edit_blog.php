@@ -114,7 +114,7 @@ if(isset($_GET['id'])){
                                                     if ($new_blog->v_main_image_url != ''):
                                                 ?>
                                                 <br/>
-                                                <img src="images/upload/<?php echo $new_blog->v_main_image_url; ?>" width="400px">
+                                                <img src="images/icon/<?php echo $new_blog->v_main_image_url; ?>" width="400px">
                                                 <?php
                                                     endif;
                                                 ?>

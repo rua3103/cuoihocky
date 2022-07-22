@@ -14,11 +14,11 @@ $db = $database->connect();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="au theme template">
-    <meta name="author" content=" Nguyen">
+    <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Home</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -51,7 +51,7 @@ $db = $database->connect();
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             
-            <?php include "header.php" ?>
+            <?php include 'header.php' ?>
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -60,7 +60,7 @@ $db = $database->connect();
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Dashboard</h2>
+                                    <h2 class="title-1">Home</h2>
                                 </div>
                             </div>
                         </div>
