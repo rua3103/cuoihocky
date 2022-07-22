@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $db = $database->connect();
   $new_user = new user($db);
   $new_user->v_username = $_POST['username'];
-  $new_user->v_password = md5($_POST['password']);
+  $new_user->v_password = ($_POST['password']);
   $result = $new_user->user_login();
   $num = $result->rowCount();
   $row_user = $result->fetch();
