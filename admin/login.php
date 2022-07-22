@@ -1,25 +1,25 @@
  <?php
-// include "includes/database.php";
-// include "includes/users.php";
-// $database = new database();
+include "includes/database.php";
+include "includes/users.php";
+$database = new database();
 
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//   $db = $database->connect();
-//   $new_user = new user($db);
-//   $new_user->v_username = $_POST['username'];
-//   $new_user->v_password = md5($_POST['password']);
-//   $result = $new_user->user_login();
-//   $num = $result->rowCount();
-//   $row_user = $result->fetch();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $db = $database->connect();
+  $new_user = new user($db);
+  $new_user->v_username = $_POST['username'];
+  $new_user->v_password = md5($_POST['password']);
+  $result = $new_user->user_login();
+  $num = $result->rowCount();
+  $row_user = $result->fetch();
 
-//   if ($num > 0) {
-//     session_start();
-//     $_SESSION['user_id'] = $row_user['n_user_id'];
-//     header("location:index.php");
-//   } else {
-//     $flag = "Login false!";
-//   }
-// }
+  if ($num > 0) {
+    session_start();
+    $_SESSION['user_id'] = $row_user['n_user_id'];
+    header("location:index.php");
+  } else {
+    $flag = "Login false!";
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
 
 <head>
 
-  <!-- <!-- Required meta tags-->
+  <!-- Required meta tags-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="au theme template">
@@ -129,7 +129,7 @@
   </script>
 
   <!-- Main JS-->
-  <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 
 </body>
 
